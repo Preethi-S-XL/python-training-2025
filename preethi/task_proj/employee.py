@@ -18,9 +18,9 @@ def level(data):
     for emp in data:
         salary=emp.get("salary",0)
         if salary>100000:
-            emp["level"]='senior'
+            emp["level"]='Senior'
         else:
-            emp["level"]='mid'
+            emp["level"]='Junior'
     return data
 new_data=level(db)
 print(new_data)
